@@ -8,9 +8,7 @@ Spork.prefork do
 
   # This file is copied to spec/ when you run 'rails generate rspec:install'
   ENV["RAILS_ENV"] ||= 'test'
-  unless defined?(Rails)
-    require File.expand_path("../../config/environment", __FILE__)
-  end
+  require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
 
   # Requires supporting ruby files with custom matchers and macros, etc,
@@ -44,5 +42,5 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-  
+  SampleApp::Application.reload_routes!
 end
