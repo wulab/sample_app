@@ -2,8 +2,8 @@ SampleApp::Application.routes.draw do
   match '/contact' => 'pages#contact'
   match '/about' => 'pages#about'
   match '/help' => 'pages#help'
-  
-  get 'users/new'
+
+  resources :users  
   match '/signup' => 'users#new'
 
   # The priority is based upon order of creation:
