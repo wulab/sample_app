@@ -24,6 +24,7 @@ gem 'thin'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 gem 'gravatar_image_tag'
+gem 'will_paginate', '>= 3.0.pre2'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -31,6 +32,7 @@ gem 'gravatar_image_tag'
 group :development do
   gem 'rspec-rails'
   gem 'annotate-models'
+  gem 'faker'
 end
 
 group :test do
