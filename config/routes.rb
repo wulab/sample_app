@@ -9,6 +9,8 @@ SampleApp::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   match '/signin', :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
+  
+  resources :microposts, :only => [:create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
