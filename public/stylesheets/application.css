@@ -136,6 +136,13 @@ td.sidebar {
 
 h1.micropost {
   margin-bottom: 0.3em;
+  width: 390px;
+}
+
+#counter {
+  float: right;
+  color: #ccc;
+  font-weight: bold;
 }
 
 table.microposts {
